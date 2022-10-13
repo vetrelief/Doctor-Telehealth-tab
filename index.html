@@ -33,173 +33,6 @@
    <!-- end #header -->
 
 
-    
-  <div id="Menu">
-    <ul id="MenuBar1" class="MenuBarHorizontal">
-		<li><a href="https://vetrelief.com/admin/#maint">Maintenance</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=job_bid&amp;sub=list_new_memos">Memos</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=jobs&amp;sub=search_list_summary&amp;status[]=active&amp;status[]=hide&amp;date_status[]=active&amp;date_status[]=hide&amp;date_status[]=filled&amp;user_modified=true&amp;sort=id&amp;order=DESC">Jobs</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=email&amp;sub=queue">View Queue</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=users&amp;sub=search_list&amp;new=1">New Accts</a></li>
-         <li><a href="https://vetrelief.com/admin/?page=email&amp;sub=reminder_list">Reminders</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=search">Search</a></li>
-
-		<li><a href="https://vetrelief.com/admin/?page=email&amp;sub=jobstep">Churn</a>	    </li>
-	    <li><a href="https://vetrelief.com/admin/?page=email&amp;sub=jobstep&amp;kind=perm">Perm Churn</a></li>
-      <li><a href="https://vetrelief.com/admin/?page=email&amp;sub=ispy_step1">ISPY</a></li>
-      <li><a href="https://vetrelief.com/director/?page=settings">Site Settings</a></li>
-    </ul>
-    <p>&nbsp;</p>
-</div>
-  
-<div id="Menu-responsive">
-	<div class="responsive-menu-title">Menu <span class="caret"></span></div>
-	<ul class="menu-ul-responsive">
-		<li><a href="https://vetrelief.com/admin/#maint">Maintenance</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=job_bid&amp;sub=list_new_memos">Memos</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=jobs&amp;sub=search_list_summary&amp;status[]=active&amp;status[]=hide&amp;date_status[]=active&amp;date_status[]=hide&amp;date_status[]=filled&amp;user_modified=true&amp;sort=id&amp;order=DESC">Jobs</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=email&amp;sub=queue">View Queue</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=users&amp;sub=search_list&amp;new=1">New Accts</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=email&amp;sub=reminder_list">Reminders</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=search">Search</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=email&amp;sub=jobstep">Churn</a>	    </li>
-		<li><a href="https://vetrelief.com/admin/?page=email&amp;sub=jobstep&amp;kind=perm">Perm Churn</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=email&amp;sub=ispy_step1">ISPY</a></li>
-		<li><a href="https://vetrelief.com/director/?page=settings">Site Settings</a></li>
-	</ul>
-    <p>&nbsp;</p>
-</div><div class="GenLayout" id="AdminNavSidebar">
-	<img src="bona%20fides%20saved_files/VetRelief-LogoTag-1CSM2.jpg" alt="" name="Logo" id="Logo" style="">
-	<h2>Bids</h2>
-  <p>
-	</p><ul>
-		<li><a href="https://vetrelief.com/admin/?page=job_bid&amp;sub=search">Search Bids</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=job_bid&amp;sub=list_new_memos">New/Modified Bid Memos</a></li>
-	
-		<li>Locate Bid by Bid ID#:
-			<form name="bidSearch" id="bidSearch" method="GET" action="https://vetrelief.com/admin/" class="navForm">
-				<input type="hidden" name="page" value="job_bid">
-				<input type="hidden" name="sub" value="detail">
-				<input name="bid_id" type="text" class="thinBorder" size="10" maxlength="25">
-				<input type="submit" name="Submit" value="Search" class="navFormButton">
-			</form>
-		</li>
-		<li>Locate Bid by Job ID#:
-			<form name="bidSearch" id="bidSearch" method="GET" action="https://vetrelief.com/admin/" class="navForm">
-				<input type="hidden" name="page" value="job_bid">
-				<input type="hidden" name="sub" value="list">
-				<input name="job_id" type="text" class="thinBorder" size="10" maxlength="25">
-				<input type="submit" name="Submit" value="Search" class="navFormButton">
-			</form>
-		</li>
-	</ul>
-	<p></p>
-		
-	<h2>Bids &amp; Schedule</h2>
-	<p>
-	</p><ul>
-		<li><a href="https://vetrelief.com/admin/?page=job_bid&amp;sub=doc_sched_form">Doctors Sched</a></li>
-		<li>Conflict by Doctor Login:
-			<form name="bidSearch" id="bidSearch" method="GET" action="https://vetrelief.com/admin/" class="navForm">
-				<input type="hidden" name="page" value="job_bid">
-				<input type="hidden" name="sub" value="list_by_doc">
-				<input type="hidden" name="mode" value="live">
-				<input name="login" type="text" class="thinBorder" size="10" maxlength="25">
-				<input type="submit" name="Submit" value="Search" class="navFormButton">
-			</form>
-		</li>
-		<li><a href="https://vetrelief.com/admin/?page=job_bid&amp;sub=hosp_sched_form">Hosp Sched</a></li>
-		<li>Conflict by Hosp. Login:
-			<form name="bidSearch" id="bidSearch" method="get" action="https://vetrelief.com/admin/" class="navForm">
-				<input type="hidden" name="page" value="job_bid">
-				<input type="hidden" name="sub" value="list_by_hosp">
-				<input type="hidden" name="mode" value="live">
-				<input type="hidden" name="start_date" value="now">
-				<input name="login" type="text" class="thinBorder" size="10" maxlength="25">
-				<input type="submit" name="Submit" value="Search" class="navFormButton">
-			</form>
-		</li>
-	</ul>
-	<p></p>
-	
-	<h2>Jobs</h2>
-	<p>
-	</p><ul>
-		<li><a href="https://vetrelief.com/admin/?page=jobs&amp;sub=search">Search Jobs</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=jobs_new">Make a Job</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=jobs&amp;sub=dbz_dates">Direct Book Search</a></li>
-        <li><a href="https://vetrelief.com/admin/?page=email&amp;sub=hosp_list&amp;kind=permanent">Hosp Prog (P)</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=jobs&amp;sub=search_list_summary&amp;status[]=active&amp;status[]=hide&amp;date_status[]=active&amp;date_status[]=hide&amp;date_status[]=filled&amp;user_modified=true&amp;sort=id&amp;order=DESC">New/Modified Jobs</a></li>
-		<li>Locate by Job ID#:
-			<form name="jobSearch" id="jobSearch" method="GET" action="https://vetrelief.com/admin/" class="navForm">
-				<input type="hidden" name="page" value="jobs">
-				<input type="hidden" name="sub" value="detail">          
-				<input name="id" type="text" class="thinBorder" size="10" maxlength="25">
-				<input type="submit" name="Submit" value="Search" class="navFormButton">
-			</form>
-		</li>
-	</ul>
-	<p></p>
-	
-	<h2>Featured Ads:</h2>
-	<p>
-	</p><ul>
-		<li><a href="https://vetrelief.com/admin/?page=featuredads&amp;sub=create">Create Ad</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=featuredads&amp;sub=list">View Ads</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=featuredads&amp;sub=uploadimage">Upload Image</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=featuredads&amp;sub=editimages">Edit Images</a></li>
-	</ul>
-	<p></p>
-	
-	<h2>Email Options:</h2>
-	<p>
-	</p><ul>
-		<li><a href="https://vetrelief.com/admin/?page=email&amp;sub=queue">View Email Queue</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=email&amp;sub=hosp_list">Hosp. Progress Report</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=email&amp;sub=hosp_list&amp;kind=permanent">Perm. Progress Report</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=email&amp;sub=reminder_list">Reminders</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=email&amp;sub=ispy_step1">ISPY</a></li>
-		<li><a href="https://vetrelief.com/director/?page=email_test">Email Tests</a></li>
-	</ul>
-	<p></p>
-	
-	<h2>Accounts:</h2>
-	<p>
-	</p><ul>
-		<li><a href="https://vetrelief.com/admin/?page=invoice&amp;sub=index">Create Invoices</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=invoice&amp;sub=index&amp;direct_book=1">Create Invoices (DIRECTBOOK)</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=users&amp;sub=search">Search Accounts</a></li>
-  		<li><a href="https://vetrelief.com/admin/?page=users&amp;sub=new">Make New Account</a></li>
-		<li><a href="https://vetrelief.com/director/?page=users">Director Users</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=users&amp;sub=superuser">Super User</a></li>
-   		<li><a href="https://vetrelief.com/admin/?page=users&amp;sub=search_list&amp;new=1">New</a></li>
-        <li><a href="https://vetrelief.com/admin/?page=users&amp;sub=search_list&amp;status=incomplete">Incomplete</a></li>
-		<li><a href="https://vetrelief.com/admin/?page=mismatch">Mismatch</a></li>
-   		<li><a href="https://vetrelief.com/admin/?page=users&amp;sub=merge">Merge</a></li>
-	</ul>
-	<p></p>
-
-	<h2><a name="maint">Maintenance Area:</a></h2>
-	<p>
-		</p><ul>
-         <li><a href="https://vetrelief.com/admin/?page=seen&amp;sub=list" target="_blank">Users Online</a></li>
-		<li><a href="https://vetrelief.com/director/?page=settings">Site Settings</a></li>
-		<li><a href="http://www.reliefpharmacist.com/admin" target="_blank">Relief Pharm Admin</a></li>
-		<li><a href="http://www.dentistrelief.com/admin" target="_blank">Dentist Relief Admin</a></li>
-        <li><a href="http://www.reliefoptometrist.com/admin" target="_blank">Relief Optometrist Admin</a></li>
-  		<li><a href="https://vetrelief.com/admin/?page=jobs&amp;sub=daySlice">Day Slice</a></li>
-		<li><a href="https://vetrelief.com/director/?page=email_template">Email Templates</a></li>
-  		<li><a href="https://vetrelief.com/director/?page=email">Create Email</a></li>
-                       <ul>
-                     <li><a href="https://vetrelief.com/director/?page=email&amp;sub=add">Add new address</a></li>
-                      <li><a href="https://vetrelief.com/director/?page=email&amp;sub=search">Search address</a></li>
-                     </ul>
-       <li><a href="https://nwerks.net/customer" target="_blank">Niftywerks Customer Area</a></li>
-		<li><a href="https://gc1.nwerks.net/cpanel" target="_blank">CtrlPanel</a></li>
-	<li><a href="https://gc1.nwerks.net:2096/" target="_blank">Web Mail</a></li></ul>
-    <li><a href="https://docs.google.com/spreadsheets/d/1Ind6Rw4WLFuUFzEBjfNY6KUYjHbVJnQo18F6hwxsWxg/edit#gid=0" target="_blank">SpreadSheets</a></li>
-	<p></p>
- </div>
 <div id="main_content_Admin">
 <p id="error" class="errorText"> </p>
 	
@@ -231,6 +64,14 @@
             </tbody></table>
             <br><br>
 <style type="text/css">
+	.GenLayout #main_content_Admin{
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 10px !important;
+	}
+	.GenLayout #main_content_Admin table{
+		width: 100% !important;
+	}
 	.new-top-header{
 		height: 6rem;
 		background-image: url('doggy_heaven_full.jpeg');
