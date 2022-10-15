@@ -64,8 +64,25 @@ width: 100% !important;
 		background-position: center;
 		background-size: cover;
 		display: block;
-		}
-		@media screen and (max-width:767px) {
+	}
+	.new-map-section{
+		height: 100%;
+		width: 100%;
+		position: relative;
+	}
+	.map-link{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+	.web-map{
+		height: 100%;
+		width: 100%;
+		/* pointer-events: none; */
+	}
+	@media screen and (max-width:767px) {
 		
 		.new-top-header{
 			max-width: 100%;
@@ -137,11 +154,12 @@ width: 100% !important;
 <table width="700" id="telehealthtable" cellspacing="1" cellpadding="2" border="1">
 	<tbody>
 	<tr class="lightcell">
-		<th colspan="4">Profile Picture</th>
+		<th colspan="2">Profile Picture</th>
 		<th colspan="3">Resources</th>
+		<th colspan="2">Browse & bid on virtual jobs</th>
 	</tr>
 	<tr>
-		<td style="text-align: left" colspan="4" rowspan="3">
+		<td style="text-align: left" colspan="2" rowspan="3">
 			<form id="avatarform" action="?" method="post">
 				<img class="doctoravatar" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" onload="this.onload=null; if(window.location.search.indexOf('?avatar') != -1) { this.src=window.location.search.substr(8); }" /><br />
 				<input type="button" name="button" value="Edit Profile Picture" onclick="this.style.display = 'none'; document.getElementById('avatarfile').style.display = 'inline-block'; document.getElementById('avatarsubmit').style.display = 'inline-block';" />
@@ -155,6 +173,12 @@ width: 100% !important;
 				<li>AVMA Telehealth Guidelines</li>
 				<li>Browse & Bid on Virtual Jobs</li>
 			</ul>
+		</td>
+		<td rowspan="3">
+			<div class="new-map-section">
+				<iframe src="https://testm.vetrelief.com/?page=virtual" class="web-map" frameborder="0"></iframe>
+				<span onclick="location.href='https://testm.vetrelief.com/?page=virtual'" class="map-link"></span>
+			</div>
 		</td>
 	</tr>
 	<tr class="lightcell">
